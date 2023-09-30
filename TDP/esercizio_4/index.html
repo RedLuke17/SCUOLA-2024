@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esercizio_4</title>
+</head>
+<body>
+    <h1>Consigli di acquisto per il nuovo televisore</h1>
+    <form action='./static/script.php' method='post'>
+        <label for="">Inserisci la marca</label>
+        <input type="text" name="marca">
+        <br/>
+        <label for="">Inserisci il modello</label>
+        <input type="text" name="modello">
+        <br/>
+        <label for="">Inserisci il numero di porte hdmi</label>
+        <input type="number" name="nPorteHDMI">
+        <br/>
+        <label for="">Inserisci il refreshrate</label>
+        <input type="number" name="refreshrate">
+        <br/>
+        <label for="">Selezione una risoluzione</label>
+        <select name="risoluzione">
+            <option value="HD Ready">HD Ready</option>
+            <option value="Full HD">Full HD</option>
+            <option value="Ultra HD">Ultra HD</option>
+            <option value="4K">4K</option>
+        </select>
+        <br/>
+        <input type="submit" value="INVIA">
+    </form>
+</body>
+</html>
