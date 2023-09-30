@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esercizio_1</title>
+</head>
+<body>
+    <h1>Modulo di rilevazione temperatura</h1>
+    <form action='./static/script.php' method='post'>
+        <table style="background-color:#FFFFFF;border-collapse:collapse;border:2px solid #000000;color:#000000;width:500px" cellpadding="5" cellspacing="6" border="2">
+            <tr>
+                <td>NOME</td>
+                <td><input type="text" name="nome"></td>
+            </tr>
+            <tr>
+                <td>COGNOME</td>
+                <td><input type="text" name="cognome"></td>
+            </tr>
+            <tr>
+                <td>RAGIONE SOCIALE</td>
+                <td><input type="text" name="ragioneSociale"></td>
+            </tr>
+
+            <tr>
+                <td>INDIRIZZO</td>
+                <td><input type="text" name="indirizzo"></td>
+            </tr>
+
+            <tr>
+                <td>P. iva</td>
+                <td><input type="text" name="partitaIva"></td>
+            </tr>
+
+            <tr>
+                <td>TEL</td>
+                <td><input type="number" name="tel"></td>
+            </tr>
+            
+            <tr>
+                <td>DATI PRODOTTO</td>
+                <td>
+                    <label for="descrizione">Descrizione</label>
+                    <input type="text" name="descrizione">
+                    <br/>
+                    <label for="codice">Codice</label>
+                    <input type="text" name="codice">
+                    <br/>
+                    <label for="giacenza">Giacenza</label>
+                    <input type="text" name="giacenza">
+                    <br/>
+                    <label for="prezzoUnitario">Prezzo unitario</label>
+                    <input type="number" name="prezzoUnitario">
+                    <br/>
+                    <label for="percIva">% Iva</label>
+                    <input type="number" name="percIva">
+                    <br/>
+                    <label for="quantita">Quantita'</label>
+                    <input type="number" name="quantita">
+                    <br/>
+                    <label for="costo">Costo</label>
+                    <input type="number" name="costo">
+                    <br/>
+                    <label for="sconto">Sconto</label>
+                    <input type="number" name="sconto" placeholder="Eventuale sconto"></td>
+            </tr>
+
+            <tr>
+                <td colspan="2"><input type="submit" value="INVIA rilevazione"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

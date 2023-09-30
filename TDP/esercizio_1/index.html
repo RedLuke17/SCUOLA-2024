@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esercizio_1</title>
+</head>
+<body>
+    <h1>Modulo di rilevazione temperatura</h1>
+    <form action='./static/script.php' method='post'>
+        <table style="background-color:#FFFFFF;border-collapse:collapse;border:2px solid #000000;color:#000000;width:500px" cellpadding="5" cellspacing="1" border="2">
+            <tr>
+                <td>LOCALITA'</td>
+                <td><input type="text" name="localita"></td>
+            </tr>
+            <tr>
+                <td>DATA</td>
+                <td><input type="text" name="data"></td>
+            </tr>
+            <tr>
+                <td>ORA</td>
+                <td><input type="text" name="ora"></td>
+            </tr>
+            <tr>
+                <td>TIPO RILEVAZIONE</td>
+                <td>
+                    <input checked type="radio" id="OFC" value="OFC" name="rilevazione"><label for="OFC">OFC</label>
+                    <input type="radio" id="AMB" value="AMB" name="rilevazione"><label for="AMB">AMB</label>
+                    <input type="radio" id="DRA" value="DRA" name="rilevazione"><label for="DRA">DRA</label>
+                </td>
+            </tr>
+            <tr>
+                <td>UMIDITA'</td>
+                <td>
+                    <select name="umidita">
+                        <option value="assoluta">ASSOLUTA</option>
+                        <option value="relativa">RELATIVA</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>CLIMA ATTUALE</td>
+                <td>
+                    <select name="climaAttuale">
+                        <option>PIOGGIA</option>
+                        <option>SERENO</option>
+                        <option>VENTOSO</option>
+                        <option>UMIDO</option>
+                        <option>FOSCHIA</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Altitudine</td>
+                <td><input type="number" name="altitudine"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" value="INVIA rilevazione"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

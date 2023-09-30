@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esercizio_2</title>
+</head>
+<body>
+    <h1>Accedi inserendo nome e password</h1>
+    <form action='./static/script.php' method='post'>
+        <label for="">Nome:</label>
+        <input type="text" name="nome">
+
+        <label for="">Password:</label>
+        <input type="text" name="password">
+
+        <p>Quali argomenti preferiresti approfondire:</p>
+        <input type="checkbox" name="infoHTML" id="infoHTML" value="Informazioni su HTML">
+        <label for="infoHTML">Informazioni su HTML</label>
+        <br/>
+        <input type="checkbox" name="immagini" id="immagini" value="immagini">
+        <label for="immagini">Immagini</label>
+        <br/>
+        <input type="checkbox" name="collegamentiEurl" id="collegamentiEurl" value="Collegamenti e URL">
+        <label for="collegamentiEurl">Collegamenti e URL</label>
+        <br/>
+        <input type="checkbox" name="oggettiMultimediali" id="oggettiMultimediali" value="Oggetti multimediali">
+        <label for="oggettiMultimediali">Oggetti multimediali</label>
+        <br/>
+        <input type="checkbox" name="XHTMLv1.0" id="XHTMLv1_0" value="XHTML versione 1.0">
+        <label for="XHTMLv1_0">XHTML versione 1.0</label>
+
+        <br/>
+        <input type="submit" value="INVIA rilevazione">
+    </form>
+</body>
+</html>
