@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esercizio_2(b)</title>
+</head>
+<body>
+    <h1>Trasformatore di caratteri</h1>
+    <form action='./static/script.php' method='post'>
+        <label for="">Inserisci un carattere o un codice ASCII</label>
+        <input type="text" name="testoInserito">
+        <br/>
+        Scegli il tipo di trasformazione:
+        <br/>
+        <input type="radio" name="tipoConversione" value="ascii" id="tipoConversioneASCII" checked>
+        <label for="tipoConversioneASCII">Converti in codice ASCII</label>
+        <input type="radio" name="tipoConversione" value="carattere" id="tipoConversioneCARATTERE">
+        <label for="tipoConversioneCARATTERE"> Converti in carattere ASCII</label>
+        <br/>
+        <input type="submit" value="Converti">
+    </form>
+</body>
+</html>
