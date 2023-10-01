@@ -29,12 +29,8 @@
         }
 
         //punteggio delle squadre
-        $punteggioSquadra_1 = $numeroPartiteVinte_1 + $numeroPartitePareggiate_1 + $numeroPartitePerse_1;
-        $punteggioSquadra_2 = $numeroPartiteVinte_2 + $numeroPartitePareggiate_2 + $numeroPartitePerse_2;
-        $nomeSquadraPunteggioAlto;
-        $nomeSquadraPunteggioBasso;
-        $punteggioSquadraAlto;
-        $punteggioSquadraBasso;
+        $punteggioSquadra_1 = ($numeroPartiteVinte_1 * 3) + $numeroPartitePareggiate_1;
+        $punteggioSquadra_2 = ($numeroPartiteVinte_2 * 3) + $numeroPartitePareggiate_2;
         if ($punteggioSquadra_1 == $punteggioSquadra_2) {
             $nomeSquadraPunteggioAlto = $nomeSquadra1;
             $punteggioSquadraAlto = $punteggioSquadra_1;

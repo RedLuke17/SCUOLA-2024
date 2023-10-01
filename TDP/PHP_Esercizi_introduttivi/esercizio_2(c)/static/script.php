@@ -2,7 +2,7 @@
     $numeroInserito = $_POST["numeroInserito"];
 
     if (is_numeric($numeroInserito)) {
-        $numeroTroncato = str_replace(["."], "", (string)$numeroInserito);
+        $numeroTroncato = floor($numeroInserito);
         echo "Numero troncato: $numeroTroncato";
     } else {
         echo "Inserisci un numero valido";
