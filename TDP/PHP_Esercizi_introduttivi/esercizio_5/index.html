@@ -8,9 +8,20 @@
 <body>
     <h1>Troncatore di decimali</h1>
     <form action='./static/script.php' method='post'>
-        <label for="">Inserisci un numero</label>
-        <input type="text" name="numeroInserito">
+        <label for="">Inserisci il nome</label>
+        <input type="text" name="nome">
         <br/>
+        <label for="">Inserisci l'eta'</label>
+        <input type="text" name="eta">
+        <br>
+        <label for="">Abbonamento</label>
+        <select name="abbonamento">
+            <option>MENSILE</option>
+            <option>BIMESTRALE</option>
+            <option>TRIMESTRALE</option>
+            <option>ANNUALE</option>
+        </select>
+        <br>
         <input type="submit" value="<- ok ->">
     </form>
 </body>
