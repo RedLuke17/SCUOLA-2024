@@ -7,11 +7,12 @@
 </head>
 <body>
     <h1>Trasformatore di variabili</h1>
-    <form action='./static/script.php' method='post'>
+    <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
         <label for="">Variabile da trasformare</label>
         <input type="text" name="variabile">
         <br/>
-        <input type="submit" value="<- ok ->">
+        <input type="submit" name="submit" value="<- ok ->">
     </form>
+    <?php include('./static/script.php'); ?>
 </body>
 </html>
