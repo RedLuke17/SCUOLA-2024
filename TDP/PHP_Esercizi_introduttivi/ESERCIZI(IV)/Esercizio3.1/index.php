@@ -7,7 +7,7 @@
 </head>
 <body>
     <table border="2">
-
+    <h2>Tavola pitagorica</h2>
         <?php
         $numero = 1;
         for($i = 1; $i <= 10 ;$i++){
