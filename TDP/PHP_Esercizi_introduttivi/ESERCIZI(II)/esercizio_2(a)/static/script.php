@@ -1,18 +1,20 @@
 <?php
-        if ($_SERVER["REQUEST_METHOD"] == "POST") {
-            $variabile = $_POST["variabile"];
+    $numero = $_POST["numero"];
 
-            $intero = (int)$variabile;
-            $float = (float)$variabile;
-            $boolean = filter_var($variabile);
-            $string = (string)$variabile;
+    $int = (int)$numero;
+    
+    $float = (float)$numero;
+    
+    $boolean = filter_var($numero);
+    
+    $string = (string)$numero;
+    
 
-            echo "Trasformata in integer vale -->$intero
-            <br/>
-            Trasformata in float vale -->$float
-            <br/>
-            Trasformata in boolean vale -->",$boolean ? "true" : "false","
-            <br/>
-            Trasformata in string vale -->$string";
-        }
+    echo "Trasformata in integer vale -->$int
+        <br/>
+        Trasformata in float vale -->$float
+        <br/>
+        Trasformata in boolean vale -->",$boolean ? "true" : "False","
+        <br/>
+        Trasformata in string vale -->$string";
 ?>
