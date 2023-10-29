@@ -7,12 +7,17 @@
 </head>
 <body>
     <h2>Risolvi equazioni</h2>
-    <label for="">N1</label>
-    <input required type="text" name="user">
-    <br>
-    <label for="">Password</label>
-    <input required type="text" name="password">
-    <br>
-    <input type="submit" name="submit" value="invia">
+    <form method="post" action="./static/script.php">
+        <label for="">a</label>
+        <input required type="text" name="a">
+        <br>
+        <label for="">b</label>
+        <input required type="text" name="b">
+        <br>
+        <label for="">c</label>
+        <input required type="text" name="c">
+        <br>
+        <input type="submit" name="submit" value="invia">
+    </form>
 </body>
 </html>
