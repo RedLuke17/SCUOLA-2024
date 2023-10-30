@@ -1,23 +1,45 @@
 <?php
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        $log = $_POST["user"];
-        $pass = $_POST["password"];
+        $input = $_POST["input"];
 
-        controllo_login($log, $pass);
+        calc_monete($input);
     }
 
-    function controllo_login($log, $pass) {
-        define("login", "admin");
-        define("password", "nimda");
+    function calc_monete ($input) {
 
-        if($log == login && $pass == password) {
-            echo"login e password ok!";
-        } 
-        if($pass != password) {
-            echo"password errata!";
+        while(200 <= $input) {
+            $input -= 200;
+            echo "2euro ";
         }
-        if($log != login) {
-            echo "login sbagliato!";
+
+        while(100 <= $input) {
+            $input -= 100;
+            echo "1euro ";
+        }
+
+        while(50 <= $input) {
+            $input -= 50;
+            echo "0.50euro ";
+        }
+
+        while(20 <= $input) {
+            $input -= 20;
+            echo "0.20euro ";
+        }
+
+        while(10 <= $input) {
+            $input -= 10;
+            echo "0.10euro ";
+        }
+
+        while(2 <= $input) {
+            $input -= 2;
+            echo "0.02euro ";
+        }
+
+        while(1 <= $input) {
+            $input -= 1;
+            echo "0.01euro ";
         }
     }
 ?>
