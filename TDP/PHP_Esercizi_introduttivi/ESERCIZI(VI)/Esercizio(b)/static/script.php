@@ -1,21 +1,27 @@
 <?php
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        $a = $_POST["a"];
-        $b = $_POST["b"];
-        $c = $_POST["c"];
-        $delta = ($b * $b) - (4 * $a * $c);
-        if ($delta > 0) {
-            $radice1 = (-$b + sqrt($delta)) / (2 * $a);
-            $radice2 = (-$b - sqrt($delta)) / (2 * $a);
-            echo "L'equazione ha due soluzioni reali distinte:<br>";
-            echo "Radice 1: $radice1<br>";
-            echo "Radice 2: $radice2<br>";
-        } elseif ($delta == 0) {
-            $radice1 = -$b / (2 * $a);
-            echo "L'equazione ha una soluzione reale (due soluzioni coincidenti):<br>";
-            echo "Radice unica: $radice1<br>";
+        $giorno = $_POST["giorno"];
+        $mese = $_POST["mese"];
+        $anno = $_POST["anno"];
+
+        $giorno_corrente = getdate()['mday'];
+        $mese_corrente = getdate()['mon'];
+        $anno_corrente = getdate()['year'];
+
+        if (checkdate($mese, $giorno, $anno)) {
+            $data_nascita = new DateTime("$anno-$mese-$giorno");
+            $differenza = $data_nascita->diff(new DateTime());
+            /*l'oggetto differenza contiene l'intervallo del tempo passato 
+            quindi accediamo alla proprietà giorni e la memorizziamo in una variabile*/
+            $giorni_trascorsi = $differenza->days;
+
+            echo "<p>Tra la data di nascita $giorno/$mese/$anno
+            <br>
+            e la data odierna $giorno_corrente/$mese_corrente/$anno_corrente
+            <br>
+            sono trascorsi $giorni_trascorsi giorni!!</p>";
         } else {
-            echo "L'equazione non ammette alcuna soluzione reale.<br>";
+            echo "<p>La data inserita non è valida</p>";
         }
     }
 ?>
