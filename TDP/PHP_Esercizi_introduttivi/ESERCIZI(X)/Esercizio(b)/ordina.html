@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordina Online</title>
+</head>
+<body>
+    <h1>Menu Ristorante Online</h1>
+    <form action="calcola.php" method="post">
+        <label for="pietanze">Seleziona le pietanze:</label><br>
+        <input type="checkbox" name="pietanze[]" value="margherita"> margherita = 5€<br>
+        <input type="checkbox" name="pietanze[]" value="americana"> americana = 7€<br>
+        <input type="checkbox" name="pietanze[]" value="4formaggi"> 4 formaggi = 6€<br>
+        <input type="checkbox" name="pietanze[]" value="panzerotto"> panzerotto = 2€<br>
+        <br>
+        <input type="checkbox" name="servizioDomicilio">aggiungi servizio a domicilio (+2€)<br>
+
+        <br><br>
+        <input type="submit" value="Ordina">
+    </form>
+</body>
+</html>
