@@ -10,7 +10,7 @@
         }
         echo "Il cookie e' stato settato per un giorno e ha value ", $_COOKIE["login"], " ", $_COOKIE["password"];
     } else {
-        setcookie("login", $username, time());  
+        setcookie("login", $username, time());
         setcookie("password", $password, time());
         echo "Il cookie e' stato settato momentaneamente e ha value ", $_COOKIE["login"], " ", $_COOKIE["password"];
     }
