@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inserimento Pressione Sanguigna</title>
+</head>
+<body>
+    <header>
+        <h1>Inserimento Pressione Sanguigna</h1>
+    </header>
+    <main>
+        <form action="insert_pressure.php" method="post">
+            <label for="patient">Seleziona il paziente:</label>
+            <input type="text" name="patient" id="patient" required>
+            <label for="max_pressure">Pressione Massima:</label>
+            <input type="text" name="max_pressure" id="max_pressure" required>
+            <label for="min_pressure">Pressione Minima:</label>
+            <input type="text" name="min_pressure" id="min_pressure" required>
+            <input type="submit" value="Inserisci Pressione">
+        </form>
+    </main>
+</body>
+</html>
