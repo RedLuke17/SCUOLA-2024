@@ -11,7 +11,7 @@
     <script>
         function rendUsers(data){
             //todo: renderizzare come voglio i dati restituiti dal server
-
+                
         }
 
         document.querySelector(".apiBTN").addEventListener("click", (e)=> {
